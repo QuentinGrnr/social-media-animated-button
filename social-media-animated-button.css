@@ -1,0 +1,82 @@
+#social-media-container{
+    width:300px;
+    display:block;
+}
+
+#social-media-container > div{
+    width: 85%;
+    height: 60px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    position: relative;
+}
+
+.discord{
+    background-color: #7289d9;
+}
+
+.youtube{
+    background-color: rgb(255, 49, 49);
+}
+
+.twitter{
+    background-color: #1d9aef;
+}
+
+.discord #logo{
+    height: 40px;
+}
+
+.youtube #logo{
+    height: 40px;
+}
+
+.twitter #logo{
+    height: 45px;
+}
+
+#text-logo{
+    position : absolute;
+    display:block;
+    transition: clip 0.3s ease-out;
+}
+
+.discord #text-logo{
+    height: 30px;
+    top:25%;
+    left:25%;
+    margin: 0 0 auto 12px;
+    clip:rect(auto, 0px, auto, 45px);
+}
+
+.youtube #text-logo{
+    height: 45px;
+    width: 150px;
+    top:12%;
+    left:34%;
+    clip:rect(auto, 0px, auto, 45px);
+}
+
+.twitter #text-logo{
+    height: 35px;
+    top:17%;
+    left:28%;
+    clip:rect(auto, 0px, auto, 45px);
+}
+
+.discord a, .youtube a, .twitter a{
+    margin : 38%;
+    transition: margin 0.3s ease-out;
+}
+
+.discord:hover > a, .youtube:hover > a, .twitter:hover > a{
+    margin: 0 0 0 5%;
+}
+
+.discord:hover > a #text-logo, .youtube:hover > a #text-logo, .twitter:hover > a #text-logo{
+    clip:rect(auto, 200px, auto, 0px);
+}
+
+
